@@ -1,0 +1,4 @@
+detects the color and then gives result , has good css , trying to connect ext cam to it 
+works good for dust, pf both
+
+trying to automate capture

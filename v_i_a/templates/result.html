@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspection Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Inspection Result</h1>
+        <div class="result">
+            <img src="{{ url_for('static', filename='uploads/' + image_path) }}" alt="Uploaded Image">
+            <div class="status">
+                <h2>Result: {{ result }}</h2>
+                <img src="{{ url_for('static', filename=result_image) }}" alt="Result Image">
+            </div>
+        </div>
+        <a href="/" class="back-btn">Go Back</a>
+    </div>
+</body>
+</html>
